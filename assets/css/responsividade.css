@@ -1,0 +1,75 @@
+@media screen and (min-width: 500px) {
+    main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card {
+        position: relative;
+        display: flex;
+        margin: 0;
+        width: 750px;
+    }
+    
+    .card__imagem {
+        width: 40%;
+        height: 302px;
+        background-size: 378px 307px;
+        overflow: visible;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    .card__container {
+        width: 60%;
+    }
+
+    .detalhes__nome {
+        transition: .3s;
+    }
+
+    .detalhes__nome:hover {
+        color: var(--cinza_azulado);
+    }
+
+    .card__compartilhar {
+        position: absolute;
+        top: 140px;
+        right: -40px;
+        width: 250px;
+        height: 60px;
+        border-radius: 10px;
+        justify-content: center;
+    }
+
+    .triangulo {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 30px solid var(--azul_escuro);
+        display: block;
+        position: absolute;
+        top: 52px;
+        right: 98px;
+    }
+
+    .perfil__btn {
+        transition: .3s;
+        opacity: 1;
+        bottom: 25px;
+        right: 55px;
+    }
+
+    .perfil__btn:hover {
+        cursor: pointer;
+        background-color: var(--cinza_azulado_claro);
+    }
+
+    .compartilhar__btn {
+        display: none;
+    }
+}

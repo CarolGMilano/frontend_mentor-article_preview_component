@@ -1,0 +1,27 @@
+@import url('card.css');
+@import url('responsividade.css');
+
+:root {
+    --azul_escuro: hsl(217, 19%, 35%);
+    --branco_azulado: hsl(210, 46%, 95%);
+    --cinza_azulado: hsl(214, 17%, 51%);
+    --cinza_azulado_claro: hsl(212, 23%, 69%);
+    --cinza_share: hsla(212, 23%, 69%, 0.164);
+
+    --fonte: 'Manrope', sans-serif;
+}
+
+body {
+    font-family: var(--fonte);
+    background-color: var(--cinza_azulado_claro);
+}
+
+.escondido {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.mostrar {
+    opacity: 1;
+    transition: opacity .3s;
+}
